@@ -64,17 +64,6 @@
   }
 }
 
-/* Laptop media */
-/* @media (48rem <= width <= 80rem){
-  .container{
-    --max-width: 48rem;
-  }
-
-  .desktop-only{
-    display: none;
-  }
-} */
-
 @media (width <= 48rem){
   .container{
     --max-width: 48rem;
