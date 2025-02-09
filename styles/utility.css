@@ -22,13 +22,31 @@
 .container {
   --max-width: 375px;
   width: min(var(--max-width), 100% - var(--px-lg) * 2);
-  border: solid violet;
   margin-inline: auto;
 }
 
 .desktop-only{
   display: none;
+}
 
+.flex{
+  display: flex;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.gap-1{
+  gap: 1rem;
+}
+
+.gap-1\.5 {
+  gap: 1.5rem;
+}
+
+.grid{
+  display: grid;
 }
 
 @media (width >= 80em) {
@@ -44,16 +62,25 @@
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
+}
 
-  .flex{
-    display: flex;
+/* Laptop media */
+/* @media (48rem <= width <= 80rem){
+  .container{
+    --max-width: 48rem;
   }
 
-  .gap-1{
-    gap: 1rem;
+  .desktop-only{
+    display: none;
+  }
+} */
+
+@media (width <= 48rem){
+  .container{
+    --max-width: 48rem;
   }
 
-  .grid{
-    display: grid;
+  .desktop-only{
+    display: none;
   }
 }
